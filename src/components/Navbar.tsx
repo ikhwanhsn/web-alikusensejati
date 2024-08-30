@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-background text-text px-5 shadow-md fixed top-0 z-50">
+    <div className="navbar bg-background text-text px-3 md:px-5 shadow-md fixed top-0 z-50">
       <div className="navbar-start">
         {/* <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -72,8 +72,12 @@ const Navbar = () => {
         </ul>
       </div> */}
       <div className="navbar-end">
-        <a className="btn bg-background text-text hover:bg-text hover:text-background">
-          Pesan Sekarang
+        <a
+          href="https://wa.me/6285290437096"
+          target="_blank"
+          className="btn bg-background text-text hover:bg-text hover:text-background"
+        >
+          Hubungi kami
         </a>
       </div>
     </div>
