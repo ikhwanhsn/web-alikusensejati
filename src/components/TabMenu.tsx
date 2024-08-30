@@ -1,17 +1,18 @@
 import AnimatedBackground from "@/components/core/animated-background";
 
-export function TabMenu() {
+export function TabMenu({ setTabMenuActive }: { setTabMenuActive: Function }) {
   return (
     <div className="rounded-[8px] bg-gray-100 p-[2px] dark:bg-zinc-800 w-fit mx-auto">
       <AnimatedBackground
-        defaultValue="Day"
+        defaultValue="Door"
         className="rounded-lg bg-white dark:bg-zinc-700"
         transition={{
           ease: "easeInOut",
           duration: 0.2,
         }}
+        onValueChange={(newActiveId) => setTabMenuActive(newActiveId)}
       >
-        {["Day", "Week", "Month", "Year"].map((label, index) => {
+        {["Door", "Window", "Furniture", "Others"].map((label, index) => {
           return (
             <button
               key={index}

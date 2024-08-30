@@ -72,7 +72,7 @@ const Navbar = () => {
         </ul>
       </div> */}
       <div className="navbar-end">
-        <a className="btn bg-background text-text hover:bg-secondary">
+        <a className="btn bg-background text-text hover:bg-text hover:text-background">
           Pesan Sekarang
         </a>
       </div>
